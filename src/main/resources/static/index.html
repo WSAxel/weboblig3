@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="front.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>Bestilling av kinobiletter</h1>
+            <form>
+                <div class="form-group">
+                    <label for="filmSelect">Velg Film</label>
+                    <select id="filmSelect" class="form-control">
+                        <option>Pulp Fiction</option>
+                        <option>Die Hard</option>
+                        <option>Kongens Nei</option>
+                        <option>Tropic Thunder</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Antall">Antall</label>
+                    <input id="Antall" type="text" class="form-control">
+                    <div id="ant" class="table-responsive"></div>
+                </div>
+                <div class="form-group">
+                    <label for="Fornavn">Fornavn</label>
+                    <input id="Fornavn" type="text" class="form-control">
+                    <div id="for" class="table-responsive"></div>
+                </div>
+                <div class="form-group">
+                    <label for="Etternavn">Etternavn</label>
+                    <input id="Etternavn" type="text" class="form-control">
+                    <div id="etter" class="table-responsive"></div>
+                </div>
+                <div class="form-group">
+                    <label for="Telefon">Telefon</label>
+                    <input id="Telefon" type="text" class="form-control">
+                    <div id="tel" class="table-responsive"></div>
+                </div>
+                <div class="form-group">
+                    <label for="Epost">Epost</label>
+                    <input id="Epost" type="text" class="form-control">
+                    <div id="epo" class="table-responsive"></div>
+                </div>
+            </form>
+            <input class="btn btn-primary" onclick="Registrer()" value="Kjøp Billett">
+            <br>
+        </div>
+        <div class="col-md-8">
+            <h2>Alle Billettene:</h2>
+            <div id="utigjen" class="table-responsive"></div>
+            <input class="btn btn-danger" onclick="Slette()" value="Slett alle billettene">
+        </div>
+    </div>
+</div>
+</body>
+</html>
